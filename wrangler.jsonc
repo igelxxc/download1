@@ -1,0 +1,20 @@
+{
+  "name": "direct-dl",
+  "main": "./worker.js",
+  "compatibility_date": "2026-09-13",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*", "/d/*"]
+  },
+  "kv_namespaces": [
+    { "binding": "STORE" }
+  ],
+  "r2_buckets": [
+    { "binding": "FILES" }
+  ],
+  "vars": {
+    "SESSION_SECRET": "change-this-session-secret"
+  }
+}

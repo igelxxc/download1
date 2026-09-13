@@ -1,0 +1,22 @@
+{
+  "name": "direct-dl",
+  "version": "1.0.0",
+  "description": "ダイレクトダウンロードリンク作成サービス",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node -e \"console.log('no build')\"",
+    "cf": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "multer": "^2.0.2"
+  }
+}
